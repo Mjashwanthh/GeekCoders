@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekCoders</title>
+    
+   
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .register-link {
+        color : white;
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body id ="body">
+    <center>
+        <div><h1 class = "title-h1">Please Enter Your Details!!</h1></div>
+    </center>
+    
+    <div class = "credential-div">
+        <form action="Success.html" onsubmit="signup(event)">
+            <label id="form-label-1" >Enter your Username : </label>
+            <input type="text" class="name" id = "register-username" required><br><br>
+            <label id="form-label-6" >Enter your Email Address : </label>
+            <input type="email" class="email" id = "register-email" required><br><br>
+            <label id="form-label-2" >Enter your Password : </label>
+            <input type="password" class="password" id="register-password" required><br><br>
+            <label id="form-label-3" >Enter Confirm Password : </label>
+            <input type="password" class="password" id="register-confirm-password" required><br><br><br>
+            <button onclick="registrationValidation()" class="register-button"><a id="register-link">Register</a></button>
+        </form>
+    </div>
+      
+  
+</body>
+</html>
