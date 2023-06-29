@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekCoders</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+       #register-link {
+        color : white;
+        text-decoration: none;
+       }
+       #regitration-link:hover {
+        width : 135px;
+    height : 37px;
+    background-color: rgb(27, 166, 212);
+       }
+	   .credential-div{
+	     position:relative;
+		 left:70px;
+	   }
+	   
+	   #login-username,#login-password{
+	     position:relative;
+		 left:-50px;
+	   }
+	  .login-button,.register-button{
+	   position:relative;
+		 left:-90px;
+	  }
+      
+    </style>
+</head>
+<body id ="body">
+    <center>
+        <div><h1 class = "title-h1"><u>WELCOME TO GEEKCODERS!!</u></h1></div>
+    </center>
+    
+    <div class = "credential-div">
+        <form>
+            <label id="form-label-1" >Username&ensp;&ensp;&ensp; : </label><input type="text" class="name" id = "login-username" ><br><br>
+            <label id="form-label-2" >Password&ensp;&ensp;&ensp; : </label><input type="password" class="password" id="login-password" ><br><br><br>
+            <br/><button type="button" class="login-button" onclick="login();"><b>Login</b></button>
+            <button type="button" onclick="register();" class="register-button"><a id="register-link" href="accountCreation.html"><b>Register</b></a></button>
+        </form>
+    </div>
+    <div class="accountCreation">
+        
+    </div>  
+   
+</body>
+<script>
+    function register(){
+        location.href="./accountCreation.html";
+    }
+    function login(){
+        
+        var Username=document.getElementById('login-username').value;
+        var pwd=document.getElementById('login-password').value;
+
+        if(Username!="" && pwd!=""){
+
+            fetchUsers();
+      //  location.href="./sectionPage.html";
+        }
+        else{
+            alert("enter all the fileds!!");
+        }
+    }
+
+    function fetchUsers() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			validateUser(JSON.parse(this.responseText));
+		}
+	};
+	xhttp.open("GET", "https://649c70180480757192382903.mockapi.io/users", true);
+	xhttp.send();
+}
+
+    function validateUser(database){
+        var Username=document.getElementById('login-username').value;
+        var pwd=document.getElementById('login-password').value;
+
+if(database.length==0){
+    alert("No such user credentials found in our database. Please register!!");
+}
+else{
+    for(let i=0;i<database.length;i++){
+            if(database[i].name==Username && database[i].pwd==pwd){
+                location.href="./sectionPage.html";
+            }
+            else{
+                alert("No such user credentials found in our database. Please register!!");
+            }
+        }
+}
+        
+
+    }
+</script>
+</html>

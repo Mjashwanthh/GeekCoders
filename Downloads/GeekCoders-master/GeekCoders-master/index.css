@@ -1,0 +1,134 @@
+body {
+    background-image:url(images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.title-h1 ,.title-h2{
+    color : rgb(67, 231, 113);
+}
+#form-label-1 ,#form-label-2,#form-label-3,#form-label-4,#form-label-6{
+    color : blanchedalmond;
+    position: relative;
+    left:500px;
+    float:left
+}
+.submit {
+    background-color: red;
+    color : white;
+    border-radius: 3px;
+    margin-left : 20px;
+    cursor: pointer;
+}
+
+.credential-div {
+    text-align: center;
+    box-shadow: 3px;
+    margin-top : 100px;
+}
+.accountCreation {
+    text-align : center;
+    padding-top : 20px;
+    padding-left : 30px;
+    
+}
+#login-link {
+    color : white;
+}
+#accountCreation-link {
+    color : white;
+}
+#accountCreation-link:hover {
+    color : blue;
+}
+.practice-questions {
+    height  : 168px; 
+    width : 240px;
+    padding-bottom : 6px;
+    
+}
+.dsa-questions {
+    height  : 170px; 
+    width : 240px;
+    padding-left : 20px;
+    padding-top : 20px;
+    padding-bottom : 26px;
+    
+}
+.practice-questions:hover,.dsa-questions:hover {
+    height : 180px;
+    width : 250px;
+    opacity : 70%;
+}
+.practice-questions-div {
+    display: inline;
+}
+
+.topicSelection-title {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 150px;
+}
+.practiceQuestions-div1 {
+    display: flex;
+	flex-direction:row;
+    height : 150px;
+    width : 1500px;
+   margin:right:30px; 	
+}
+.practiceQuestions-div2 {
+    display: flex;
+	flex-direction:row;
+    height : 150px;
+    width : 1500px;
+   margin-top : 50px;
+   margin-left : 300px;
+   margin-right : 200px;
+}
+.array,.string,.linkedlist,.stack,.queue,.binarysearch,.sorting,.tree,.graph,.recursion,.dynamic {
+    height : 100%;
+    width : 200px;
+    margin-left : 10px;
+    margin-right : 5px;
+   
+    border-radius : 10px;
+}
+.array:hover,.string:hover,.linkedlist:hover,.stack:hover,.queue:hover,.binarysearch:hover,.sorting:hover,.tree:hover,.graph:hover,.recursion:hover,.dynamic:hover {
+    height : 160px;
+    width : 210px;
+    opacity : 70%;
+}
+
+.string {
+    border-radius : 10px;
+    width : 200px;
+    
+}
+.login-button , .register-button,.submit {
+    height : 35px;
+    width : 130px;
+    border-radius: 4px;
+    background-color: blue;
+    color : white;
+    border : black;
+    font-family: sans-serif;
+    cursor : pointer;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+.login-button:hover ,.register-button:hover,.submit:hover {
+    width : 135px;
+    height : 37px;
+    background-color: rgb(27, 166, 212);
+}
+
+#register-username,#register-email,#register-password,#register-confirm-password{
+    border-radius: 5px;
+}
