@@ -10,17 +10,18 @@
     <style>
         table {
           border-collapse: collapse;
-          width: 50%;
+          width: 70%;
           margin-top : 100px;
          
         }
       
         th, td {
+          
           border: 1px solid black;
           padding: 8px;
           text-align: left;
-          padding-right: 10px;
-          padding-left : 100px;
+          padding-right: 50px;
+          padding-left : 50px;
           padding-top : 20px;
           padding-bottom: 20px;
         }
@@ -28,7 +29,7 @@
             color : black;
             font-style: italic;
         }
-        #links {
+        .links {
             color : greenyellow;
             cursor: pointer;
         }
@@ -60,7 +61,7 @@ tbody {
             <th>S.No</th>
             <th>Name of the problem</th>
             <th>Link</th>
-            
+            <th>Solved/UnSolved</th>
           </tr>
         </thead>
         <tbody>
@@ -68,35 +69,35 @@ tbody {
             <td>1</td>
             <td>Climbing Stairs
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/climbing-stairs/">Solve Problem</a></td>
-            
+            <td><a id="link-1" class="links" href="https://leetcode.com/problems/climbing-stairs/">Solve Problem</a></td>
+             <td><input id="checkbox-1" type="checkbox"></td>
           </tr>
           <tr>
             <td>2</td>
             <td>Pascal's Triangle
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/pascals-triangle/">Solve Problem</a></td>
-          
+            <td><a id="link-2" class="links" href="https://leetcode.com/problems/pascals-triangle/">Solve Problem</a></td>
+           <td><input id="checkbox-2" type="checkbox"></td>
           </tr>
           <tr>
             <td>3</td>
             <td>Pascal's Triangle II
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/pascals-triangle-ii/">Solve Problem</a></td>
-            
+            <td><a id="link-3" class="links" href="https://leetcode.com/problems/pascals-triangle-ii/">Solve Problem</a></td>
+             <td><input id="checkbox-3" type="checkbox"></td>
           </tr>
           <tr>
             <td>4</td>
             <td>Best Time to Buy and Sell Stock</td>
-            <td><a id="links" href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Solve Problem</a></td>
-          
+            <td><a id="link-4" class="links" href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Solve Problem</a></td>
+           <td><input id="checkbox-4" type="checkbox"></td>
           </tr>
           <tr>
             <td>5</td>
             <td>Counting Bits
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/counting-bits/">Solve Problem</a></td>
-           
+            <td><a id="link-5" class="links" href="https://leetcode.com/problems/counting-bits/">Solve Problem</a></td>
+            <td><input id="checkbox-5" type="checkbox"></td>
           </tr>
         </tbody>
       </table>

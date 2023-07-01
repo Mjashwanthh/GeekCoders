@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        table {
+       table {
           border-collapse: collapse;
-          width: 50%;
+          width: 70%;
           margin-top : 100px;
          
         }
       
         th, td {
+          
           border: 1px solid black;
           padding: 8px;
           text-align: left;
-          padding-right: 10px;
-          padding-left : 100px;
+          padding-right: 50px;
+          padding-left : 50px;
           padding-top : 20px;
           padding-bottom: 20px;
         }
@@ -28,7 +29,7 @@
             color : black;
             font-style: italic;
         }
-        #links {
+        .links {
             color : greenyellow;
             cursor: pointer;
         }
@@ -60,42 +61,42 @@ tbody {
             <th>S.No</th>
             <th>Name of the problem</th>
             <th>Link</th>
-            
+            <th>Solved/UnSolved</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>Root Equals Sum of Children</td>
-            <td><a id="links" href="https://leetcode.com/problems/root-equals-sum-of-children/">Solve Problem</a></td>
-            
+            <td><a id="link-1" class="links" href="https://leetcode.com/problems/root-equals-sum-of-children/">Solve Problem</a></td>
+             <td><input id="checkbox-1" type="checkbox"></td>
           </tr>
           <tr>
             <td>2</td>
             <td> Root Equals Sum of Children
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/root-equals-sum-of-children/">Solve Problem</a></td>
-          
+            <td><a id="link-2" class="links" href="https://leetcode.com/problems/root-equals-sum-of-children/">Solve Problem</a></td>
+           <td><input id="checkbox-2" type="checkbox"></td>
           </tr>
           <tr>
             <td>3</td>
             <td>Increasing Order Search Tree</td>
-            <td><a id="links" href="https://leetcode.com/problems/increasing-order-search-tree/">Solve Problem</a></td>
-            
+            <td><a id="link-3" class="links" href="https://leetcode.com/problems/increasing-order-search-tree/">Solve Problem</a></td>
+             <td><input id="checkbox-3" type="checkbox"></td>
           </tr>
           <tr>
             <td>4</td>
             <td>Cousins in Binary Tree
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/cousins-in-binary-tree/">Solve Problem</a></td>
-          
+            <td><a id="link-4" class="links" href="https://leetcode.com/problems/cousins-in-binary-tree/">Solve Problem</a></td>
+           <td><input id="checkbox-4" type="checkbox"></td>
           </tr>
           <tr>
             <td>5</td>
             <td>Search in a Binary Search Tree
             </td>
-            <td><a id="links" href="https://leetcode.com/problems/search-in-a-binary-search-tree/">Solve Problem</a></td>
-           
+            <td><a id="link-5" class="links" href="https://leetcode.com/problems/search-in-a-binary-search-tree/">Solve Problem</a></td>
+            <td><input id="checkbox-5" type="checkbox"></td>
           </tr>
         </tbody>
       </table>

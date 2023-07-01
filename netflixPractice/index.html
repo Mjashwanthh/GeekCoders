@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        table {
+       table {
           border-collapse: collapse;
-          width: 50%;
+          width: 70%;
           margin-top : 100px;
          
         }
       
         th, td {
+          
           border: 1px solid black;
           padding: 8px;
           text-align: left;
-          padding-right: 10px;
-          padding-left : 100px;
+          padding-right: 50px;
+          padding-left : 50px;
           padding-top : 20px;
           padding-bottom: 20px;
         }
@@ -28,7 +29,7 @@
             color : black;
             font-style: italic;
         }
-        #links {
+        .links {
             color : greenyellow;
             cursor: pointer;
         }
@@ -60,39 +61,39 @@ tbody {
             <th>S.No</th>
             <th>Name of the problem</th>
             <th>Link</th>
-            
+            <th>Solved/UnSolved</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>Find a triplet that sums to a given value</td>
-            <td><a id="links" href="https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1">Solve Problem</a></td>
-            
+            <td><a id="link-1" class="links" href="https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1">Solve Problem</a></td>
+             <td><input id="checkbox-1" type="checkbox"></td>
           </tr>
           <tr>
             <td>2</td>
             <td>Boolean Matrix</td>
-            <td><a id="links" href="https://practice.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1">Solve Problem</a></td>
-          
+            <td><a id="link-2" class="links" href="https://practice.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1">Solve Problem</a></td>
+           <td><input id="checkbox-2" type="checkbox"></td>
           </tr>
           <tr>
             <td>3</td>
             <td>Maximum subset XOR</td>
-            <td><a id="links" href="https://practice.geeksforgeeks.org/problems/maximum-subset-xor/1?page=1&difficulty[]=2&company[]=Amazon&company[]=Microsoft&company[]=Flipkart&company[]=Adobe&category[]=Arrays&sortBy=submissions">Solve Problem</a></td>
-            
+            <td><a id="link-3" class="links" href="https://practice.geeksforgeeks.org/problems/maximum-subset-xor/1?page=1&difficulty[]=2&company[]=Amazon&company[]=Microsoft&company[]=Flipkart&company[]=Adobe&category[]=Arrays&sortBy=submissions">Solve Problem</a></td>
+             <td><input id="checkbox-3" type="checkbox"></td>
           </tr>
           <tr>
             <td>4</td>
             <td>Next Smallest Palindrome</td>
-            <td><a id="links" href="https://practice.geeksforgeeks.org/problems/next-smallest-palindrome4740/1?page=1&difficulty[]=2&company[]=Amazon&company[]=Microsoft&company[]=Flipkart&company[]=Adobe&category[]=Arrays&sortBy=submissions">Solve Problem</a></td>
-          
+            <td><a id="link-4" class="links" href="https://practice.geeksforgeeks.org/problems/next-smallest-palindrome4740/1?page=1&difficulty[]=2&company[]=Amazon&company[]=Microsoft&company[]=Flipkart&company[]=Adobe&category[]=Arrays&sortBy=submissions">Solve Problem</a></td>
+           <td><input id="checkbox-4" type="checkbox"></td>
           </tr>
           <tr>
             <td>5</td>
             <td>Nuts and Bolts Problem</td>
-            <td><a id="links" href="https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem0431/1">Solve Problem</a></td>
-           
+            <td><a id="link-5" class="links" href="https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem0431/1">Solve Problem</a></td>
+            <td><input id="checkbox-5" type="checkbox"></td>
           </tr>
         </tbody>
       </table>
